@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 20px;
+    
+}
+
+nav a{
+    margin-top: 10px;
+}
+a{
+    padding: 15px 12px;
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(213, 213, 32);
+}
+img{
+    width: 150px;
+    margin-top: 120px;
+}
+.pc-tablette{
+
+margin-top: 180px;
+}
+.pc-tablette span a{
+    padding: 15px 60px;
+}
+
+.pc-tablette .ligne1{
+ text-align: center;
+ 
+
+}
+
+.pc-tablette .ligne1 a{
+    margin-left: 85px;
+}
+
+
+.pc-tablette .ligne2{
+   text-align: center;
+   margin-top: 85px;
+}
+.pc-tablette a{
+    font-size: 45px;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 768px){
+     nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-top: 20px;
+    }  
+        
+        nav a{
+            width: 100%;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .telephone-uniquement .ligne1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 70px;
+            padding-left: 50px;
+           padding-right: 50px;
+           gap: 20px;
+        }
+        .telephone-uniquement .ligne1 a{
+            padding: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        img{
+            padding-bottom: 50px;
+        }
+        .pc-tablette{
+            display: none;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .telephone-uniquement {
+            display: none;
+        }
+    }
+
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .pc-tablette{
+            display: none;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px){
+        nav{
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-right: 0;
+            padding-left: 120px;
+            padding-right: 120px;
+            margin-top: 20px;
+        }  
+            
+            nav a{
+                width: 100%;
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .telephone-uniquement .ligne1{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 70px;
+                padding-left: 120px;
+               padding-right: 120px;
+               gap: 20px;
+            }
+            .telephone-uniquement .ligne1 a{
+                padding: 50px;
+                font-size: 20px;
+                text-align: center;
+            }
+            img{
+                padding-bottom: 50px;
+            }
+            
+    }
+
+    
+    
+
+
+
